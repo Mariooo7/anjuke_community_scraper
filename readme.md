@@ -6,9 +6,6 @@
 
 ## 项目结构
 
-anjuke-scraper/
-
-│
 
 ├── anjuke_scraper/          # 主文件夹
 
