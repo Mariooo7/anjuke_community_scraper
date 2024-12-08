@@ -14,7 +14,7 @@ anjuke-scraper/
 
 │   ├── init.py
 
-│   ├── **scraper.py**           # 主要爬虫代码
+│   ├── **anjuke_scraper.py**           # 主要爬虫代码
 
 │   ├── utils.py             # 工具函数
 
@@ -53,7 +53,7 @@ anjuke-scraper/
 
    2. 运行爬虫
 
-      `python -m anjuke_scraper.scraper`
+      `python -m anjuke_scraper.anjuke_scraper`
 
 ## 注意事项
 
