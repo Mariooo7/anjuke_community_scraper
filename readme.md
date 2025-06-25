@@ -6,21 +6,35 @@
 
 ## 项目结构
 
-anjuke-scraper/
-│
+
 ├── anjuke_scraper/          # 主文件夹
+
 │   ├── init.py
+
+│   ├── **main.py**           # 主要运行文件
+
 │   ├── **scraper.py**           # 主要爬虫代码
+
 │   ├── utils.py             # 工具函数
+
 │   └── **config.py**            # 配置文件，包含爬取城市、区域、页数、cookies、headers参数
+
 │
+
 ├── tests/                   # 测试文件夹
+
 │   ├── test_scraper.py      # 测试爬虫
+
 │   └── test_utils.py        # 测试工具函数
+
 │
+
 ├── **requirements.txt**         # 依赖库文件，列出项目需要的第三方库
+
 ├── README.md                # 项目说明文件，描述如何使用、安装等
+
 └── .gitignore               # 忽略文件
+
 
 ## 安装和使用
 
@@ -38,7 +52,7 @@ anjuke-scraper/
 
    2. 运行爬虫
 
-      `python -m anjuke_scraper.scraper`
+      `python -m anjuke_scraper.main`
 
 ## 注意事项
 
