@@ -43,17 +43,25 @@ def get_community_details(url, headers, cookies):
         name = soup.find('h1', class_='title').get_text(strip=True)
         address = soup.find('p', class_='sub-title').get_text(strip=True)
         price = soup.find('span', class_='average').get_text(strip=True)
+        age = soup.find('div', class_='value value_2').get_text(strip=True)
+        year = soup.find('div', class_='value value_3').get_text(strip=True)
+        far = soup.find('div', class_='value value_6').get_text(strip=True)
         green_rate = soup.find('div', class_='value value_7').get_text(strip=True)
+        car_park = int(soup.find('div', class_='value value_12').get_text(strip=True) != '暂无')
         property_fee = soup.find('div', class_='value value_13').get_text(strip=True)
         property_type = soup.find('div', class_='value value_0').get_text(strip=True)
 
         # 输出或返回数据
         return {
-            '小区名字': name,
+            '小区': name,
             '小区地址': address,
-            '均价': price,
-            '绿化率': green_rate,
-            '物业费': property_fee,
+            'PRI': price,
+            'AGE': age,
+            'YEAR': year,
+            'FAR': far,
+            'GRE': green_rate,
+            'CAR': car_park,
+            'PRO': property_fee,
             '物业类型': property_type
         }
 
